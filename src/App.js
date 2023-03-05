@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/Header";
+import Overview from "./components/Overview";
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Overview />
       </div>
     );
   }
