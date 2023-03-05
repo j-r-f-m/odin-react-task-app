@@ -156,6 +156,7 @@ body {
   padding: 5rem;
 
   display: flex;
+  justify-content: center;
 }
 
 .label-input {
