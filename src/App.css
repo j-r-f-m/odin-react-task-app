@@ -130,11 +130,19 @@ table {
   border-spacing: 0;
 } /* ---------------------- RESET END --------------------------------------  */
 
+body {
+  font-family: sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-container {
   display: flex;
   justify-content: center;
 
-  font-family: sans-serif;
   font-weight: bold;
 
   background-color: lightblue;
@@ -142,4 +150,18 @@ table {
 
 .header-container > h1 {
   padding: 3rem;
+}
+
+.form-container {
+  padding: 5rem;
+
+  display: flex;
+}
+
+.label-input {
+  display: flex;
+}
+
+.btn {
+  margin-left: 1rem;
 }
