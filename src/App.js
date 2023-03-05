@@ -12,16 +12,30 @@ class App extends Component {
     this.onClickBtn = this.onClickBtn.bind(this);
 
     this.inputValue = {
-      task: [],
+      tasksArray: [{ taskId: 0, taskName: "Clean House" }],
     };
   }
 
+  // getting input from input field and push input input into array
   onClickBtn() {
     console.log("Add tasks");
     const currTask = document.getElementById("input-field");
 
-    this.inputValue.task.push(currTask.value);
-    console.log(this.inputValue.task);
+    // create current task object
+    const currTaskObj = {
+      taskId: this.inputValue.tasksArray.length,
+      taskName: currTask.value,
+    };
+
+    this.inputValue.tasksArray.push(currTaskObj);
+    console.log(this.inputValue.tasksArray);
+
+    // turn data into dom elements
+    const arrayItems = this.inputValue.tasksArray.map((ele) => (
+      <li key={ele.taskId}>ele</li>
+    ));
+    console.log(arrayItems);
+    return <ul>{arrayItems}</ul>;
   }
 
   render() {

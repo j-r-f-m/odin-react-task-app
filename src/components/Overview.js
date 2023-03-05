@@ -8,7 +8,7 @@ class Overview extends Component {
   render() {
     return (
       <div className="overview-container">
-        <h2>Tasks</h2>
+        <h2>Tasks List</h2>
       </div>
     );
   }
